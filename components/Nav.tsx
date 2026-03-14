@@ -35,8 +35,14 @@ export default function Nav() {
           ))}
         </nav>
 
-        {/* Desktop CTA */}
-        <div className="hidden md:block">
+        {/* Desktop CTAs */}
+        <div className="hidden md:flex items-center gap-3">
+          <Link
+            href="/portal/"
+            className="font-body text-sm font-light text-earth/70 hover:text-earth tracking-wide transition-colors min-h-[44px] flex items-center"
+          >
+            Member Login
+          </Link>
           <Link
             href="/services"
             className="font-body text-sm font-medium bg-earth text-saffron-light px-5 min-h-[44px] flex items-center rounded-[2px] hover:bg-earth-mid transition-colors tracking-wide"
@@ -75,9 +81,16 @@ export default function Nav() {
             </Link>
           ))}
           <Link
+            href="/portal/"
+            onClick={() => setOpen(false)}
+            className="font-body text-sm font-light text-earth/70 tracking-wide min-h-[44px] flex items-center"
+          >
+            Member Login
+          </Link>
+          <Link
             href="/services"
             onClick={() => setOpen(false)}
-            className="font-body text-sm font-medium bg-earth text-saffron-light px-5 min-h-[44px] flex items-center justify-center rounded-[2px] text-center tracking-wide mt-2 hover:bg-earth-mid transition-colors"
+            className="font-body text-sm font-medium bg-earth text-saffron-light px-5 min-h-[44px] flex items-center justify-center rounded-[2px] text-center tracking-wide hover:bg-earth-mid transition-colors"
           >
             Apply Now
           </Link>
