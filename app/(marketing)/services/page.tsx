@@ -177,7 +177,7 @@ export default function ServicesPage() {
                         tier.dark ? 'text-saffron-light/40' : 'text-stone'
                       }`}
                     >
-                      Who it's for
+                      Who it&apos;s for
                     </p>
                     <p
                       className={`font-body font-light text-sm leading-relaxed mb-5 ${
@@ -229,7 +229,7 @@ export default function ServicesPage() {
             Apply for a spot →
           </Link>
           <p className="font-body text-xs font-light text-saffron-light/30 mt-6 tracking-wide">
-            We'll respond within 48 hours with next steps.
+            We&apos;ll respond within 48 hours with next steps.
           </p>
         </div>
       </section>

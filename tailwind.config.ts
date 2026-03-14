@@ -17,6 +17,7 @@ const config: Config = {
         linen: '#F7F1E8',
         'warm-white': '#FDFAF5',
         stone: '#9E9388',
+        sage: '#8FA882',
       },
       fontFamily: {
         display: ['var(--font-cormorant)', 'Georgia', 'serif'],

@@ -3,6 +3,20 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer>
+      {/* CTA strip */}
+      <div className="bg-saffron-pale px-6 py-12 md:py-16 text-center flex flex-col items-center gap-6">
+        <p className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-earth leading-tight max-w-2xl">
+          Ready to invest in the rest of{' '}
+          <em className="text-saffron not-italic">your life?</em>
+        </p>
+        <Link
+          href="/services"
+          className="font-body text-sm font-medium bg-saffron text-white border-0 w-full sm:w-auto px-10 min-h-[44px] flex items-center justify-center rounded-[2px] hover:bg-earth-mid transition-colors tracking-wide"
+        >
+          Apply for a spot →
+        </Link>
+      </div>
+
       {/* Bengali script band */}
       <div className="bg-earth overflow-hidden pt-12 pb-10">
         <p
@@ -39,20 +53,6 @@ export default function Footer() {
             </div>
           ))}
         </div>
-      </div>
-
-      {/* CTA strip */}
-      <div className="bg-saffron-pale px-6 py-12 md:py-16 text-center flex flex-col items-center gap-6">
-        <p className="font-display text-4xl md:text-5xl lg:text-6xl font-light text-earth leading-tight max-w-2xl">
-          Ready to invest in the rest of{' '}
-          <em className="text-saffron not-italic">your life?</em>
-        </p>
-        <Link
-          href="/services"
-          className="font-body text-sm font-medium bg-saffron text-white border-0 w-full sm:w-auto px-10 min-h-[44px] flex items-center justify-center rounded-[2px] hover:bg-earth-mid transition-colors tracking-wide"
-        >
-          Apply for a spot →
-        </Link>
       </div>
 
       {/* Bottom bar */}

@@ -23,7 +23,7 @@ export default function BlogPage() {
           </h1>
           <p className="font-body font-light text-lg text-earth/60 leading-relaxed max-w-2xl">
             Evidence-based. Culturally fluent. No wellness fluff, no shame, no
-            generic advice that wasn't built for your body.
+            generic advice that wasn&apos;t built for your body.
           </p>
         </div>
       </section>
