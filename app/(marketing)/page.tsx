@@ -310,7 +310,7 @@ export default function Home() {
                 <Link
                   href="/services"
                   className="font-body text-sm font-medium text-center min-h-[44px] flex items-center justify-center rounded-[2px] tracking-wide"
-                  style={{ backgroundColor: 'transparent', border: '2px solid #C8832A', color: '#C8832A' }}
+                  style={{ backgroundColor: '#3D2B1A', border: '2px solid #C8832A', color: '#F0C078' }}
                 >
                   Apply for {tier.name}
                 </Link>
