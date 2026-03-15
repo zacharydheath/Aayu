@@ -55,17 +55,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="bg-earth px-6 py-5">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-          <Link href="/" className="font-display font-light text-xl tracking-widest text-saffron-light/80">
-            AA<span className="text-saffron-light">Y</span>U
-          </Link>
-          <p className="font-body text-xs font-light text-saffron-light/40 tracking-wide">
-            © 2026 Aayu Health · hello@aayu.health
-          </p>
-        </div>
-      </div>
     </footer>
   )
 }
