@@ -77,7 +77,7 @@ const tiers = [
 
       'Quarterly printed health report — bound, beautifully designed, delivered to your home',
       'Family health consultation quarterly — spouse and parents included',
-      'Invitation to the annual Aayu Retreat',
+
       'Direct WhatsApp access to your physician between visits',
       'Priority access to Aayu Neuro sessions',
     ],
@@ -105,7 +105,7 @@ const tiers = [
       'Quarterly individual health screening for each family member',
 
       'Annual family health report — one beautifully bound document',
-      'Two invitations to the annual Aayu Retreat',
+
       'Priority Aayu Neuro access for all adult members',
       'Direct physician WhatsApp line for anyone in the household',
     ],
