@@ -151,7 +151,7 @@ export default function Home() {
               href="/services"
               className="font-body text-sm font-medium bg-saffron text-white border-0 px-7 min-h-[44px] flex items-center justify-center rounded-[2px] hover:bg-earth-mid transition-colors tracking-wide w-full sm:w-auto"
             >
-              Apply for coaching
+              Now Accepting Applications — April Cohort
             </Link>
             <a
               href="#method"
