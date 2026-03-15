@@ -271,7 +271,7 @@ export default function Home() {
                 style={'featured' in tier && tier.featured ? { borderLeft: '3px solid #C8832A' } : undefined}
               >
                 <h3
-                  className="font-display font-light text-3xl mb-1 text-earth"
+                  className="font-display font-light text-5xl md:text-[48px] mb-1 text-earth leading-tight"
                 >
                   {tier.name}
                 </h3>
