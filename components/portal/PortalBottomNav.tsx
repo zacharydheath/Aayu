@@ -2,48 +2,48 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-function HomeIcon() {
+function HomeIcon({ color }: { color: string }) {
   return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path stroke="currentColor" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-      <polyline stroke="currentColor" points="9 22 9 12 15 12 15 22" />
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style={{ width: 22, height: 22, display: 'block', flexShrink: 0 }}>
+      <path stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+      <polyline stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" points="9 22 9 12 15 12 15 22" />
     </svg>
   )
 }
 
-function CheckinIcon() {
+function CheckinIcon({ color }: { color: string }) {
   return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <circle stroke="currentColor" cx="12" cy="12" r="9" />
-      <polyline stroke="currentColor" points="9 12 11 14 15 10" />
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style={{ width: 22, height: 22, display: 'block', flexShrink: 0 }}>
+      <circle stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" cx="12" cy="12" r="9" />
+      <polyline stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" points="9 12 11 14 15 10" />
     </svg>
   )
 }
 
-function ProgressIcon() {
+function ProgressIcon({ color }: { color: string }) {
   return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <polyline stroke="currentColor" points="3 17 8 12 13 15 21 7" />
-      <line stroke="currentColor" x1="3" y1="21" x2="21" y2="21" />
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style={{ width: 22, height: 22, display: 'block', flexShrink: 0 }}>
+      <polyline stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" points="3 17 8 12 13 15 21 7" />
+      <line stroke={color} strokeWidth="1.5" strokeLinecap="round" x1="3" y1="21" x2="21" y2="21" />
     </svg>
   )
 }
 
-function CoachIcon() {
+function CoachIcon({ color }: { color: string }) {
   return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path stroke="currentColor" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style={{ width: 22, height: 22, display: 'block', flexShrink: 0 }}>
+      <path stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
     </svg>
   )
 }
 
-function CommunityIcon() {
+function CommunityIcon({ color }: { color: string }) {
   return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <circle stroke="currentColor" cx="9" cy="7" r="3" />
-      <path stroke="currentColor" d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
-      <path stroke="currentColor" d="M16 3.13a4 4 0 0 1 0 7.75" />
-      <path stroke="currentColor" d="M21 21v-2a4 4 0 0 0-3-3.85" />
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style={{ width: 22, height: 22, display: 'block', flexShrink: 0 }}>
+      <circle stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" cx="9" cy="7" r="3" />
+      <path stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+      <path stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M16 3.13a4 4 0 0 1 0 7.75" />
+      <path stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M21 21v-2a4 4 0 0 0-3-3.85" />
     </svg>
   )
 }
@@ -86,10 +86,10 @@ export default function PortalBottomNav() {
           <Link
             key={href}
             href={href}
-            style={{ color, flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 4, minHeight: 64, textDecoration: 'none' }}
+            style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 4, minHeight: 64, textDecoration: 'none' }}
           >
-            <Icon />
-            <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: 10, fontWeight: isActive ? 500 : 300 }}>
+            <Icon color={color} />
+            <span style={{ fontFamily: 'var(--font-dm-sans)', fontSize: 10, fontWeight: isActive ? 500 : 300, color }}>
               {label}
             </span>
           </Link>
