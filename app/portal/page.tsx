@@ -12,7 +12,7 @@ export default function PortalHome() {
   const { isCheckedIn } = useCheckin()
 
   return (
-    <div className="pt-4 pb-4">
+    <div className="pt-4 pb-8">
       {/* Hero metric card */}
       <div
         className="mx-4 rounded-2xl p-5 relative overflow-hidden"
@@ -150,7 +150,7 @@ export default function PortalHome() {
 
       {/* Next session card */}
       <div
-        className="mx-4 mt-3 mb-4 rounded-xl p-4"
+        className="mx-4 mt-3 mb-6 rounded-xl p-4"
         style={{ background: '#FDFAF5', border: '0.5px solid rgba(61,43,26,0.1)' }}
       >
         <p className="font-body font-medium text-[9px] tracking-[0.2em] uppercase text-saffron mb-1">Next Session</p>

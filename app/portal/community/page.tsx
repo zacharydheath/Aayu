@@ -329,7 +329,7 @@ export default function CommunityPage() {
   const [tab, setTab] = useState<Tab>('feed')
 
   return (
-    <div className="flex flex-col min-h-full pb-4">
+    <div className="flex flex-col min-h-full pb-8">
       {/* Cohort header card */}
       <div
         className="mx-4 mt-4 rounded-2xl p-5 relative overflow-hidden"
