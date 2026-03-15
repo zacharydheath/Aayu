@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Services — Aayu',
   description:
-    'Three tiers of premium South Asian lifestyle coaching. Choose the level of support that fits your life.',
+    'Premium longevity coaching for Bangladeshi families. Choose the level of support that fits your life.',
 }
 
 const tiers = [
@@ -25,7 +25,7 @@ const tiers = [
     ctaNote: null,
     features: [
       'Dedicated health coach, monthly 30-min video check-in',
-      'Nutrition coaching built around your actual diet and culture',
+      'Nutrition coaching built around the way you actually eat',
       'Movement guidance for where you\'re starting, not where you should be',
       'Weekly check-ins to stay honest and on track',
       'Access to the Aayu member community',

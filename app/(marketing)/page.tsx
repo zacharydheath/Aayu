@@ -4,7 +4,7 @@ const pillars = [
   {
     num: '01',
     name: 'Nutrition',
-    desc: 'Culturally grounded food frameworks that work with South Asian diets, not against them.',
+    desc: 'Culturally grounded food frameworks that work with Bangladeshi diets, not against them.',
   },
   {
     num: '02',
@@ -142,7 +142,7 @@ export default function Home() {
             <em className="text-saffron not-italic italic">fully lived.</em>
           </h1>
           <p className="font-body font-light text-base text-earth/60 leading-relaxed max-w-md mb-8">
-            Aayu brings together South Asian culture and modern longevity science
+            Aayu brings together Bangladeshi culture and modern longevity science
             into a coaching experience built uniquely for every member.
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -182,8 +182,8 @@ export default function Home() {
             <p className="font-body font-light text-[15px] text-saffron-light/70 leading-relaxed mt-4">
               Aayu was founded after watching someone we love pay the price. We
               built the coaching we wish had existed. We're not a generic
-              wellness app. We understand South Asian bodies, South Asian diets,
-              and South Asian family dynamics. That context is everything.
+              wellness app. We understand Bangladeshi bodies, Bangladeshi diets,
+              and how families here actually live. That context is everything.
             </p>
             <Link
               href="/story"

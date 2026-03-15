@@ -5,7 +5,7 @@ import { posts } from '@/lib/blog-data'
 export const metadata: Metadata = {
   title: 'Blog — Aayu',
   description:
-    'Honest writing about South Asian health, longevity, and what the wellness industry gets wrong.',
+    'Honest writing about Bangladeshi health, longevity, and what the wellness industry gets wrong.',
 }
 
 export default function BlogPage() {
@@ -19,7 +19,7 @@ export default function BlogPage() {
           </p>
           <h1 className="font-display font-light text-5xl md:text-6xl lg:text-7xl text-earth leading-[1.1] mb-8">
             Honest writing about{' '}
-            <em className="text-saffron not-italic italic">South Asian health.</em>
+            <em className="text-saffron not-italic italic">Bangladeshi health.</em>
           </h1>
           <p className="font-body font-light text-lg text-earth/60 leading-relaxed max-w-2xl">
             Evidence-based. Culturally fluent. No wellness fluff, no shame, no

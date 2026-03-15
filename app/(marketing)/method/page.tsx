@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'The Method — Aayu',
   description:
-    'Four pillars. One coherent life. Nutrition, movement, mindset, and biomarkers — built for South Asian bodies.',
+    'Four pillars. One coherent life. Nutrition, movement, mindset, and biomarkers — built for Bangladeshi bodies.',
 }
 
 const pillars = [
@@ -13,8 +13,8 @@ const pillars = [
     name: 'Nutrition',
     intro: 'The goal isn\'t a perfect diet. It\'s a sustainable one.',
     paras: [
-      'South Asian diets are rich, communal, and deeply tied to identity. Most nutrition advice treats that as a problem to overcome. We don\'t.',
-      'We work with what you actually eat — rice, lentils, ghee, family dinners, Eid, Diwali, everything. Our coaching is built around understanding how your specific food patterns interact with your specific body, then making intelligent adjustments that don\'t require you to stop being who you are.',
+      'Bangladeshi food is rich, communal, and deeply tied to who you are. Most nutrition advice treats that as a problem to overcome. We don\'t.',
+      'We work with what you actually eat — rice, dal, hilsa, family dinners, Eid, everything. Our coaching is built around understanding how your specific food patterns interact with your specific body, then making intelligent adjustments that don\'t require you to stop being who you are.',
       'No elimination diets. No meal plans that ignore your mother\'s cooking. Just a clearer understanding of what\'s working, what isn\'t, and how to shift it gradually and permanently.',
     ],
   },
@@ -23,7 +23,7 @@ const pillars = [
     name: 'Movement',
     intro: 'Start where you are. Build from there.',
     paras: [
-      'Exercise has an image problem in many South Asian communities — particularly for women, for whom vigorous physical activity was rarely modeled or encouraged. We don\'t judge that history. We work from it.',
+      'Exercise has an image problem in Bangladesh — particularly for women, for whom vigorous physical activity was rarely modeled or encouraged. We don\'t judge that history. We work from it.',
       'Your movement plan starts at your actual starting point, not a fitness influencer\'s. We focus on progressive strength and mobility — the two things that most directly determine how your body ages — built into a routine that fits your real life, not an idealized version of it.',
       'The goal isn\'t aesthetic. It\'s functional longevity. Being strong enough to live fully for as long as possible.',
     ],
@@ -34,7 +34,7 @@ const pillars = [
     intro: 'Habits don\'t form in a vacuum.',
     paras: [
       'Lasting change isn\'t about willpower. It\'s about understanding the environment, relationships, and identity patterns that shape your daily decisions — and working with them intelligently.',
-      'South Asian households are often built around shared meals, collective schedules, and deep respect for tradition. That\'s not an obstacle to health. With the right framing, it\'s one of the most powerful assets you have. We help you work with your context, not against it.',
+      'Bangladeshi families are often built around shared meals, collective schedules, and deep respect for tradition. That\'s not an obstacle to health. With the right framing, it\'s one of the most powerful assets you have. We help you work with your context, not against it.',
       'Your coach will work with you on the internal side of change — not with generic productivity frameworks, but with real attention to what actually drives your behavior and what\'s been quietly getting in the way.',
     ],
   },
@@ -44,7 +44,7 @@ const pillars = [
     intro: 'Your numbers should mean something to you.',
     paras: [
       'Most people get their labs back and don\'t know what they\'re looking at. A number is in range, or it isn\'t. End of conversation.',
-      'We go further. South Asian bodies have specific risk profiles — for cardiovascular disease, insulin resistance, vitamin D deficiency, and more — that standard lab panels often underweight. We help you understand what to test for, how to read what comes back, and what to actually do about it.',
+      'We go further. In Bangladesh, the risk profiles for cardiovascular disease, insulin resistance, and vitamin D deficiency are significantly elevated — and standard lab panels often underweight them. We help you understand what to test for, how to read what comes back, and what to actually do about it.',
       'At the Premier and Elite tiers, your coach works through your labs with you directly, flags patterns worth discussing with your physician, and helps you track progress over time. Your biomarkers become a conversation, not a mystery.',
     ],
   },
@@ -65,8 +65,8 @@ export default function MethodPage() {
           </h1>
           <p className="font-body font-light text-lg text-earth/60 leading-relaxed max-w-2xl">
             Most health coaching was designed for someone else. We built Aayu
-            around the specific patterns, risks, and realities that shape South
-            Asian health — then wrapped it in the kind of human support that
+            around the specific patterns, risks, and realities that shape health
+            in Bangladesh — then wrapped it in the kind of human support that
             actually makes change stick.
           </p>
         </div>

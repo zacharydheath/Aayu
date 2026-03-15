@@ -4,14 +4,14 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'Our Story — Aayu',
   description:
-    'Aayu was founded after watching someone we love pay the price of a health system that wasn\'t built for South Asian bodies.',
+    'Aayu was founded after watching someone we love pay the price of a health system that wasn\'t built for people like us.',
 }
 
 const values = [
   {
     name: 'Cultural Fluency',
     body:
-      'We know what a South Asian dinner table looks like. We know the dynamics of a multigenerational household. We know the unspoken rules around exercise, food, and the body — especially for women. That knowledge isn\'t incidental to our work. It is our work.',
+      'We know what a Bangladeshi dinner table looks like. We know the dynamics of a multigenerational household. We know the unspoken rules around exercise, food, and the body — especially for women. That knowledge isn\'t incidental to our work. It is our work.',
   },
   {
     name: 'Evidence-Based',
@@ -74,7 +74,7 @@ export default function StoryPage() {
               not to prevent it from taking hold in the first place.
             </p>
             <p className="font-body font-light text-base text-earth/65 leading-relaxed mb-5">
-              That gap — between what South Asian bodies actually need and what
+              That gap — between what our bodies actually need and what
               the wellness industry offers — is exactly what Aayu was built to
               close.
             </p>
@@ -145,7 +145,7 @@ export default function StoryPage() {
       <section className="bg-earth">
         <div className="max-w-4xl mx-auto px-6 py-24 md:py-32 text-center">
           <p className="font-display font-light text-4xl md:text-5xl lg:text-6xl text-saffron-light leading-tight">
-            "Longevity isn't a luxury. For South Asian families,{' '}
+            "Longevity isn't a luxury. For Bangladeshi families,{' '}
             <em className="text-saffron not-italic italic">it's overdue.</em>"
           </p>
         </div>
@@ -191,11 +191,11 @@ export default function StoryPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <p className="font-body font-light text-base text-earth/65 leading-relaxed mb-5">
-                South Asians are four times more likely to develop heart disease
+                Bangladeshis are four times more likely to develop heart disease
                 than the general population — and at significantly younger ages.
-                South Asian women have some of the highest rates of osteoporosis
+                Bangladeshi women have some of the highest rates of osteoporosis
                 in the world. Type 2 diabetes develops at lower BMI thresholds
-                in South Asian populations than in any other group.
+                in Bangladeshi populations than in any other group.
               </p>
               <p className="font-body font-light text-base text-earth/65 leading-relaxed">
                 These are known facts. The wellness industry has, largely, failed
@@ -205,12 +205,12 @@ export default function StoryPage() {
             <div>
               <p className="font-body font-light text-base text-earth/65 leading-relaxed mb-5">
                 Generic advice — eat less rice, do more cardio, take your
-                vitamins — fails South Asian clients not because it's wrong, but
+                vitamins — fails Bangladeshi clients not because it's wrong, but
                 because it misses the cultural context that makes behaviour
                 change actually possible.
               </p>
               <p className="font-body font-light text-base text-earth/65 leading-relaxed">
-                Aayu coaches understand the role of food in South Asian
+                Aayu coaches understand the role of food in Bangladeshi
                 community life. They understand the family pressure, the
                 intergenerational norms, the specific dynamics around women and
                 exercise. That understanding is what makes our coaching work.

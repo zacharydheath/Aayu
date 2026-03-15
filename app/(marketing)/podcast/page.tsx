@@ -3,16 +3,16 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Podcast — Aayu',
   description:
-    'Honest conversations about South Asian health, longevity, and what it means to truly live.',
+    'Honest conversations about health in Bangladesh, longevity, and what it means to truly live.',
 }
 
 const episodes = [
   {
     num: 'EP 01',
-    title: 'The South Asian Heart Disease Epidemic Nobody\'s Talking About',
+    title: 'The Heart Disease Epidemic in Bangladesh Nobody\'s Talking About',
     duration: '52 min',
     desc:
-      'We break down the data on South Asian cardiovascular risk — why rates are four times higher, why they emerge younger, and what the wellness industry is getting badly wrong.',
+      'We break down the data on cardiovascular risk in Bangladesh — why rates are four times higher, why they emerge younger, and what the wellness industry is getting badly wrong.',
   },
   {
     num: 'EP 02',
@@ -30,24 +30,24 @@ const episodes = [
   },
   {
     num: 'EP 04',
-    title: 'Why Western Wellness Advice Fails South Asian Bodies',
+    title: 'Why Western Wellness Advice Doesn\'t Work Here',
     duration: '49 min',
     desc:
       'The research gap, the BMI problem, the cholesterol confusion, and what it actually means to receive health advice that was never designed with you in mind.',
   },
   {
     num: 'EP 05',
-    title: 'The Gut Health Crisis in the Diaspora',
+    title: 'The Gut Health Crisis Nobody\'s Talking About',
     duration: '41 min',
     desc:
-      'The intersection of traditional South Asian diets, Western dietary shifts in the diaspora, microbiome research, and what the gut health influencer industry gets spectacularly wrong.',
+      'The intersection of traditional Bangladeshi diets, Western dietary shifts, microbiome research, and what the gut health influencer industry gets spectacularly wrong.',
   },
   {
     num: 'EP 06',
-    title: 'Strength Training and South Asian Women: Breaking the Taboo',
+    title: 'Strength Training and Bangladeshi Women: Breaking the Taboo',
     duration: '55 min',
     desc:
-      'The cultural silence around exercise for South Asian women, the specific health risks that make strength training particularly important, and how to start building a practice from zero.',
+      'The cultural silence around exercise for Bangladeshi women, the specific health risks that make strength training particularly important, and how to start building a practice from zero.',
   },
 ]
 
@@ -67,7 +67,7 @@ export default function PodcastPage() {
               <em className="text-saffron not-italic italic">Real lives.</em>
             </h1>
             <p className="font-body font-light text-lg text-saffron-light/60 leading-relaxed max-w-2xl mb-10">
-              Honest conversations about South Asian health, longevity, and what
+              Honest conversations about health in Bangladesh, longevity, and what
               it means to truly live.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -151,7 +151,7 @@ export default function PodcastPage() {
             New episodes every two weeks.
           </h2>
           <p className="font-body font-light text-base text-earth/60 leading-relaxed mb-8">
-            Subscribe wherever you listen. We cover South Asian health, longevity
+            Subscribe wherever you listen. We cover health in Bangladesh, longevity
             research, cultural dynamics, and the evidence behind the coaching we do.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

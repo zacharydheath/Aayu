@@ -18,8 +18,8 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Aayu — Premium South Asian Lifestyle Coaching',
-  description: 'Aayu brings together South Asian culture and modern longevity science into a coaching experience built uniquely for every member.',
+  title: 'Aayu — Longevity, by design.',
+  description: 'Aayu brings together Bangladeshi culture and modern longevity science into a coaching experience built uniquely for every member.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
