@@ -74,8 +74,8 @@ const tiers = [
   {
     label: 'AAYU NEURO',
     name: 'Aayu Neuro',
-    bdtPrice: 'From $600',
-    usdPrice: null,
+    bdtPrice: '৳75,000',
+    usdPrice: '($600 / session)',
     period: '/ session',
     tag: 'Add-on · All members',
     dark: false,
