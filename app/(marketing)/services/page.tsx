@@ -219,8 +219,8 @@ export default function ServicesPage() {
                   )}
                   <Link
                     href="#apply"
-                    className="inline-block font-body text-sm font-medium py-3 px-7 rounded-sm tracking-wide transition-colors bg-warm-white text-saffron hover:bg-saffron-pale"
-                    style={{ border: '2px solid #C8832A' }}
+                    className="inline-block font-body text-sm font-medium py-3 px-7 rounded-sm tracking-wide"
+                    style={{ backgroundColor: 'transparent', border: '2px solid #C8832A', color: '#C8832A' }}
                   >
                     Apply for {tier.name}
                   </Link>
