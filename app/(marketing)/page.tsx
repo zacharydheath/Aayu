@@ -133,7 +133,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="pt-16 bg-linen">
-        <div className="px-8 md:px-14 lg:px-20 pt-10 pb-12 md:pt-16 md:pb-20 w-full">
+        <div className="px-8 md:px-14 lg:px-20 pt-5 pb-6 md:pt-16 md:pb-20 w-full">
           <p className="font-body text-[10px] font-medium tracking-[0.3em] text-saffron uppercase mb-5">
             Longevity, by design.
           </p>
