@@ -67,16 +67,11 @@ export default function PortalBottomNav() {
   return (
     <nav
       style={{
-        position: 'fixed',
-        bottom: 0,
-        left: '50%',
-        transform: 'translateX(-50%)',
+        flexShrink: 0,
         width: '100%',
-        maxWidth: 420,
         minHeight: 64,
         background: '#FDFAF5',
         borderTop: '1px solid rgba(61,43,26,0.12)',
-        zIndex: 100,
         display: 'flex',
       }}
     >

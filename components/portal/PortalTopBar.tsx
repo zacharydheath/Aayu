@@ -19,7 +19,7 @@ export default function PortalTopBar() {
 
   return (
     <header
-      className="sticky top-0 z-50 h-14 bg-warm-white flex items-center justify-between px-4"
+      className="shrink-0 h-14 bg-warm-white flex items-center justify-between px-4"
       style={{ borderBottom: '1px solid rgba(61,43,26,0.08)' }}
     >
       {/* Left: Wordmark */}
