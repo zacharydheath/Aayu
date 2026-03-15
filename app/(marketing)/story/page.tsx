@@ -116,6 +116,31 @@ export default function StoryPage() {
         </div>
       </section>
 
+      {/* Medical team */}
+      <section className="bg-linen">
+        <div className="max-w-4xl mx-auto px-6 py-20 md:py-28">
+          <p className="font-body text-[10px] font-medium tracking-[0.25em] text-saffron uppercase mb-4">
+            Our Medical Team
+          </p>
+          <h2 className="font-display font-light text-4xl md:text-5xl text-earth leading-tight mb-8">
+            Built with clinical credibility.{' '}
+            <em className="text-saffron not-italic italic">From the start.</em>
+          </h2>
+          <p className="font-body font-light text-[15px] text-earth-mid leading-[1.8] mb-5">
+            We built Aayu with medical credibility at its core — not as a
+            feature added later. Our physician team operates on the ground in
+            Dhaka and remotely from the United States, bringing together general
+            medicine and neurological expertise under one membership.
+          </p>
+          <p className="font-body font-light text-[15px] text-earth-mid leading-[1.8]">
+            This isn't a wellness app with a doctor's name on it. It's a
+            medically informed coaching practice that happens to feel like a
+            luxury experience. When your coach and your physician are working
+            from the same plan, everything changes.
+          </p>
+        </div>
+      </section>
+
       {/* Mission quote */}
       <section className="bg-earth">
         <div className="max-w-4xl mx-auto px-6 py-24 md:py-32 text-center">

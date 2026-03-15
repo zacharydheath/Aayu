@@ -25,50 +25,73 @@ const pillars = [
 
 const tiers = [
   {
-    label: 'AAYU ESSENTIALS',
-    name: 'Essentials',
-    price: '$200',
+    label: 'AAYU CORE',
+    name: 'Aayu Core',
+    price: '$175',
     period: '/mo',
-    tag: 'Foundation tier',
+    tag: 'Foundation',
     dark: false,
+    neuro: false,
     features: [
-      'Monthly 1:1 call with your dedicated coach',
-      'Nutrition coaching built around your actual life',
-      'Movement guidance for where you\'re starting, not where you "should" be',
+      'Dedicated health coach, weekly 30-min video check-in',
+      'Nutrition coaching built around your actual diet and culture',
+      'Movement guidance for where you\'re starting, not where you should be',
       'Weekly check-ins to stay honest and on track',
       'Access to the Aayu member community',
       'Habit tracking via the Aayu app',
     ],
   },
   {
-    label: 'AAYU PREMIER',
-    name: 'Premier',
-    price: '$500',
+    label: 'AAYU PLUS',
+    name: 'Aayu Plus',
+    price: '$450',
     period: '/mo',
     tag: 'Most Popular',
     dark: true,
+    neuro: false,
     features: [
-      'Bi-weekly 1:1 with your dedicated coach',
+      'Dedicated senior coach, bi-weekly 45-min 1:1 sessions',
       'Nutrition and movement coaching that evolves with you',
-      'Understanding your biomarkers — what the numbers mean and what to do about them',
-      'Wearable guidance so your data actually tells you something',
-      'WhatsApp access between sessions — not just for emergencies',
-      'Priority scheduling, always',
+      'Daily Aayu meal delivery, 5 days a week',
+      'Quarterly at-home health screening by our medical team',
+      'Aayu welcome kit — supplement starter pack, branded essentials',
+      'Monthly progress report, beautifully designed',
     ],
   },
   {
-    label: 'AAYU ELITE',
-    name: 'Elite',
+    label: 'AAYU CONCIERGE',
+    name: 'Aayu Concierge',
     price: '$1,000',
     period: '/mo',
-    tag: 'Concierge tier',
+    tag: 'Signature',
     dark: false,
+    neuro: false,
     features: [
-      'Weekly 1:1 plus unlimited async support',
-      'Custom lab panel review with your coach',
-      'Coordination with your physician when it matters',
-      'A full audit of how you\'re living — sleep, stress, food, movement, all of it',
-      'One family member included, because health doesn\'t happen in isolation',
+      'Dedicated senior coach plus monthly physician home visit',
+      'Daily meal delivery 7 days a week, including breakfast',
+      'Oura ring gifted at signup',
+      'Matte black Aayu membership card',
+      'Quarterly printed health report, delivered to your home',
+      'Family health consultation quarterly',
+      'Invitation to the annual Aayu Retreat',
+      'Direct WhatsApp access to your physician between visits',
+    ],
+  },
+  {
+    label: 'AAYU NEURO',
+    name: 'Aayu Neuro',
+    price: 'From $600',
+    period: '/session',
+    tag: 'Add-on · All members',
+    dark: false,
+    neuro: true,
+    features: [
+      '60-min remote consultation with our neurologist',
+      'Cognitive performance and memory assessment',
+      'Sleep architecture review and recommendations',
+      'Stress and cortisol pattern analysis',
+      'Early neurological risk screening',
+      'Written summary delivered within 48 hours',
     ],
   },
 ]
@@ -199,17 +222,20 @@ export default function Home() {
             <p className="font-body text-[10px] font-medium tracking-[0.3em] text-saffron uppercase mb-3">
               Services
             </p>
-            <h2 className="font-display font-light text-4xl md:text-5xl text-earth leading-tight">
+            <h2 className="font-display font-light text-4xl md:text-5xl text-earth leading-tight mb-4">
               Choose your{' '}
               <em className="text-saffron not-italic italic">level of support.</em>
             </h2>
+            <p className="font-body font-light text-[15px] text-earth/60 leading-relaxed max-w-2xl">
+              From daily meal delivery to physician home visits — every tier of Aayu is built around one idea: your health deserves real investment.
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-earth/10">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-px bg-earth/10">
             {tiers.map((tier) => (
               <div
                 key={tier.name}
-                className={`p-6 lg:p-8 flex flex-col ${tier.dark ? 'bg-earth' : 'bg-warm-white'}`}
+                className={`p-6 lg:p-8 flex flex-col ${tier.dark ? 'bg-earth' : 'bg-warm-white'} ${tier.neuro ? 'border-t-2 border-saffron' : ''}`}
               >
                 <p
                   className={`font-body text-[9px] font-medium tracking-[0.22em] uppercase mb-2 ${

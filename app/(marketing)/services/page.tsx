@@ -9,65 +9,82 @@ export const metadata: Metadata = {
 
 const tiers = [
   {
-    label: 'AAYU ESSENTIALS',
-    name: 'Essentials',
-    price: '$200',
+    label: 'AAYU CORE',
+    name: 'Aayu Core',
+    price: '$175',
     period: '/mo',
-    tag: 'Foundation tier',
+    tag: 'Foundation',
     dark: false,
-    tagline: 'For someone who knows something needs to change and wants a knowledgeable guide in their corner — without overhauling their entire life overnight.',
-    whoFor:
-      'Best for: Members who want a clear plan and accountability without high-frequency coaching. You\'re motivated but you need the framework, the starting point, and someone to check in with.',
-    month:
-      'A typical month looks like: a 60-minute strategy call at the start of the month, your updated nutrition framework and movement plan delivered within 48 hours, and a written check-in midway through to adjust.',
+    tagline: 'For someone who\'s ready to start — and wants the right guidance from day one.',
+    whoFor: 'Available to new members with no minimum commitment. Your coach will build your first framework within 48 hours of your intake call.',
+    month: 'A typical month includes a weekly 30-minute video check-in, an updated nutrition and movement plan, and a written summary after each session. You also have access to the Aayu app for daily habit tracking.',
     features: [
-      'Monthly 1:1 call with your dedicated coach',
-      'Nutrition coaching built around your actual life',
-      'Movement guidance for where you\'re starting, not where you "should" be',
+      'Dedicated health coach, weekly 30-min video check-in',
+      'Nutrition coaching built around your actual diet and culture',
+      'Movement guidance for where you\'re starting, not where you should be',
       'Weekly check-ins to stay honest and on track',
       'Access to the Aayu member community',
       'Habit tracking via the Aayu app',
     ],
   },
   {
-    label: 'AAYU PREMIER',
-    name: 'Premier',
-    price: '$500',
+    label: 'AAYU PLUS',
+    name: 'Aayu Plus',
+    price: '$450',
     period: '/mo',
     tag: 'Most Popular',
     dark: true,
-    tagline: 'For someone ready to go deeper. You want to understand your body, build real habits, and have a coach who actually knows you between sessions.',
-    whoFor:
-      'Best for: Members who want ongoing support, accountability, and the experience of having a dedicated expert in their corner. You know the stakes. You\'re ready to invest accordingly.',
-    month:
-      'A typical month looks like: bi-weekly 45-minute coaching calls, a continuously updated nutrition and movement program, biomarker reviews when new labs come in, and unlimited async messaging between sessions.',
+    tagline: 'For someone ready to make health a visible, daily part of their life.',
+    whoFor: 'Best for members who want coaching that goes beyond the session — daily meals handled, quarterly screenings done, and a progress report you\'d actually want to keep.',
+    month: 'A typical month includes bi-weekly 45-minute coaching sessions, daily meal delivery 5 days a week, and a quarterly at-home screening coordinated by our medical team. Your monthly report arrives beautifully designed.',
     features: [
-      'Bi-weekly 1:1 with your dedicated coach',
+      'Dedicated senior coach, bi-weekly 45-min 1:1 sessions',
       'Nutrition and movement coaching that evolves with you',
-      'Understanding your biomarkers — what the numbers mean and what to do about them',
-      'Wearable guidance so your data actually tells you something',
-      'WhatsApp access between sessions — not just for emergencies',
-      'Priority scheduling, always',
+      'Daily Aayu meal delivery, 5 days a week — chef-prepared, nutritionally calibrated, delivered to your door',
+      'Quarterly at-home health screening — bloodwork, vitals, and a full review coordinated by our medical team',
+      'Aayu welcome kit — supplement starter pack, branded essentials',
+      'Monthly progress report, beautifully designed',
     ],
   },
   {
-    label: 'AAYU ELITE',
-    name: 'Elite',
+    label: 'AAYU CONCIERGE',
+    name: 'Aayu Concierge',
     price: '$1,000',
     period: '/mo',
-    tag: 'Concierge tier',
+    tag: 'Signature',
     dark: false,
-    tagline: 'For someone who wants the full picture. You\'re ready to treat your health like the long-term investment it is — and you want a partner, not a program.',
-    whoFor:
-      'Best for: Executives, high-performers, and members for whom time is the limiting factor. You want expert guidance that fits around your life, not the other way around.',
-    month:
-      'A typical month looks like: weekly 60-minute coaching sessions, same-day response to any message, a dedicated support representative who manages scheduling and coordination, and a comprehensive annual longevity plan reviewed quarterly.',
+    tagline: 'For someone who wants the full picture — and the full experience.',
+    whoFor: 'For members who want physician-level oversight, daily meals, and the kind of membership that makes health feel effortless. Family included.',
+    month: 'A typical month includes weekly coaching, a physician home visit, daily meal delivery, and a quarterly printed health report delivered to your home. Your family members join the quarterly health consultation.',
     features: [
-      'Weekly 1:1 plus unlimited async support',
-      'Custom lab panel review with your coach',
-      'Coordination with your physician when it matters',
-      'A full audit of how you\'re living — sleep, stress, food, movement, all of it',
-      'One family member included, because health doesn\'t happen in isolation',
+      'Dedicated senior coach plus monthly home visit from our Dhaka physician',
+      'Daily meal delivery 7 days a week, including breakfast',
+      'Oura ring gifted at signup — your health data, always with you',
+      'Matte black Aayu membership card',
+      'Quarterly printed health report — bound, beautifully designed, delivered to your home',
+      'Family health consultation quarterly — spouse and parents included',
+      'Invitation to the annual Aayu Retreat',
+      'Direct WhatsApp access to your physician between visits',
+      'Priority access to Aayu Neuro sessions',
+    ],
+  },
+  {
+    label: 'AAYU NEURO',
+    name: 'Aayu Neuro',
+    price: 'From $600',
+    period: '/session',
+    tag: 'Add-on · All members',
+    dark: false,
+    tagline: 'Your brain is the most important organ you\'re probably not tracking.',
+    whoFor: 'Available to all Aayu members as a standalone add-on. Aayu Concierge members receive priority scheduling and a discounted rate.',
+    month: 'Each session is self-contained: a 60-minute remote consultation, followed by a written summary with personalized recommendations within 48 hours. Findings are shared with your coach and integrated into your overall plan.',
+    features: [
+      '60-minute remote consultation with our US-based neurologist',
+      'Cognitive performance and memory assessment',
+      'Sleep architecture review and recommendations',
+      'Stress and cortisol pattern analysis using your wearable data',
+      'Early neurological risk screening',
+      'Written summary with personalized recommendations within 48 hours',
     ],
   },
 ]
@@ -82,14 +99,13 @@ export default function ServicesPage() {
             Services
           </p>
           <h1 className="font-display font-light text-5xl md:text-6xl lg:text-7xl text-earth leading-[1.1] mb-8">
-            Premium coaching.{' '}
-            <em className="text-saffron not-italic italic">Real humans.</em>{' '}
-            Real results.
+            A membership built around your life.{' '}
+            <em className="text-saffron not-italic italic">Not a generic plan.</em>
           </h1>
           <p className="font-body font-light text-lg text-earth/60 leading-relaxed max-w-2xl">
-            Every Aayu program is delivered by a dedicated coach who
-            understands South Asian bodies, diets, and family dynamics. No
-            algorithms. No PDFs. No generic plans.
+            Aayu operates in Dhaka with a small, carefully selected membership.
+            Every tier includes dedicated coaching, physician oversight, and the
+            kind of attention that produces real, lasting change.
           </p>
         </div>
       </section>
@@ -205,6 +221,9 @@ export default function ServicesPage() {
               </div>
             </div>
           ))}
+          <p className="font-body font-light italic text-sm text-earth-mid/60 text-center mt-6">
+            Available quarterly or biannually. Aayu Concierge members receive priority scheduling.
+          </p>
         </div>
       </section>
 
@@ -218,9 +237,8 @@ export default function ServicesPage() {
             Spots are limited.
           </h2>
           <p className="font-body font-light text-base text-saffron-light/60 leading-relaxed mb-10 max-w-xl mx-auto">
-            We work with a small number of members at a time. Every coach at
-            Aayu carries a limited client load so that you receive the attention
-            your program demands.
+            Aayu accepts a small number of new members at a time. If you're
+            ready to invest in your health seriously, we'd love to hear from you.
           </p>
           <Link
             href="mailto:hello@aayu.health?subject=Application"
