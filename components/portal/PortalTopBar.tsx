@@ -5,8 +5,8 @@ export default function PortalTopBar() {
       style={{ borderBottom: '1px solid rgba(61,43,26,0.08)' }}
     >
       {/* Left: Wordmark */}
-      <span className="font-display font-light text-base tracking-[0.18em] text-earth select-none">
-        AAY<span className="text-saffron">U</span>
+      <span className="font-display font-light text-base tracking-[0.15em] text-earth select-none">
+        Aa<span className="text-saffron">y</span>u
       </span>
 
       {/* Center: Greeting */}
