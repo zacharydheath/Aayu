@@ -69,14 +69,18 @@ const tiers = [
     tag: 'Signature',
     dark: false,
     neuro: false,
+    note: 'Aayu accepts a maximum of 50 Concierge members at any time.',
     features: [
-      'Dedicated senior coach plus monthly physician home visit',
-      'Daily meal delivery 7 days a week, including breakfast',
-
-      'Quarterly printed health report, delivered to your home',
-      'Family health consultation quarterly',
-
+      'Dedicated senior coach plus monthly home visit from your named Aayu physician',
+      'Daily meal delivery 7 days a week, including breakfast — calibrated to your quarterly screening results',
+      'Quarterly at-home health screening — bloodwork, vitals, full review',
+      'Quarterly printed health report — bound, beautifully designed, delivered to your home',
+      'Annual health letter from your physician, on Aayu letterhead',
+      'Pharmacy coordination handled directly by your Aayu physician',
       'Direct WhatsApp access to your physician between visits',
+      'Priority scheduling and guaranteed same-week response on all requests',
+      'First access to new Aayu services and programs',
+      'Priority access to Aayu Neuro sessions',
     ],
   },
   {
@@ -88,15 +92,18 @@ const tiers = [
     tag: 'Legacy',
     dark: false,
     neuro: false,
+    note: 'Aayu Family is not publicly listed. Access is by referral from an existing Concierge member only.',
     features: [
       'Everything in Aayu Concierge for the primary member',
       'Dedicated coach for each adult family member',
-      'Monthly physician home visit for the entire household',
-      'Daily meal delivery for the whole family, 7 days a week',
-      'Quarterly individual health screening for each family member',
-
-      'Annual family health report — one beautifully bound document',
-
+      'Monthly physician home visit covers every member of the household',
+      'Daily meal delivery for the whole family, 7 days a week — meals calibrated to each member\'s health profile',
+      'One special occasion meal per quarter — Eid, anniversaries, family gatherings, handled by Aayu Kitchen',
+      'Annual in-home family health day — full screenings for every member, back to back, in your home',
+      'Individual quarterly health screening for each family member',
+      'School and travel health letters for children, issued by your Aayu physician',
+      'Annual family health report — every member, one beautifully bound document',
+      'Pharmacy coordination for the entire household',
       'Priority Aayu Neuro access for all adult members',
       'Direct physician WhatsApp line for anyone in the household',
     ],
@@ -294,7 +301,7 @@ export default function Home() {
                     </p>
                   )}
                 </div>
-                <ul className="flex flex-col gap-3 mb-8 flex-1">
+                <ul className="flex flex-col gap-3 mb-5 flex-1">
                   {tier.features.map((f) => (
                     <li
                       key={f}
@@ -307,6 +314,11 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
+                {'note' in tier && tier.note && (
+                  <p className="font-body font-light italic text-[11px] text-stone mb-5 leading-relaxed">
+                    {tier.note}
+                  </p>
+                )}
                 <Link
                   href="/services"
                   className={`font-body text-sm font-medium text-center min-h-[44px] flex items-center justify-center rounded-[2px] tracking-wide transition-colors ${
