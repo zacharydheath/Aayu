@@ -23,9 +23,9 @@ export default function PortalTopBar() {
       style={{ borderBottom: '1px solid rgba(61,43,26,0.08)' }}
     >
       {/* Left: Wordmark */}
-      <span className="font-display font-light text-base tracking-[0.15em] text-earth select-none">
+      <Link href="/" className="font-display font-light text-base tracking-[0.15em] text-earth">
         Aa<span className="text-saffron">y</span>u
-      </span>
+      </Link>
 
       {/* Center: Greeting */}
       <span className="font-body font-light text-[13px] text-earth/60 absolute left-1/2 -translate-x-1/2">
