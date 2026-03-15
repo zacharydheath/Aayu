@@ -312,7 +312,7 @@ export default function Home() {
                   className="font-body text-sm font-medium text-center min-h-[44px] flex items-center justify-center rounded-[2px] tracking-wide"
                   style={{ backgroundColor: '#3D2B1A', border: '2px solid #C8832A', color: '#F0C078' }}
                 >
-                  Apply for {tier.name}
+                  Apply for {tier.name} — April Cohort
                 </Link>
               </div>
             ))}

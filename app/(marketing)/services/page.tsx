@@ -222,7 +222,7 @@ export default function ServicesPage() {
                     className="inline-block font-body text-sm font-medium py-3 px-7 rounded-sm tracking-wide"
                     style={{ backgroundColor: '#3D2B1A', border: '2px solid #C8832A', color: '#F0C078' }}
                   >
-                    Apply for {tier.name}
+                    Apply for {tier.name} — April Cohort
                   </Link>
                 </div>
 
