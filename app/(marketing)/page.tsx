@@ -27,8 +27,9 @@ const tiers = [
   {
     label: 'AAYU CORE',
     name: 'Aayu Core',
-    price: '$175',
-    period: '/mo',
+    bdtPrice: '৳25,000',
+    usdPrice: '($200 / month)',
+    period: '/ month',
     tag: 'Foundation',
     dark: false,
     neuro: false,
@@ -44,8 +45,9 @@ const tiers = [
   {
     label: 'AAYU PLUS',
     name: 'Aayu Plus',
-    price: '$450',
-    period: '/mo',
+    bdtPrice: '৳50,000',
+    usdPrice: '($400 / month)',
+    period: '/ month',
     tag: 'Most Popular',
     dark: true,
     neuro: false,
@@ -61,8 +63,9 @@ const tiers = [
   {
     label: 'AAYU CONCIERGE',
     name: 'Aayu Concierge',
-    price: '$1,000',
-    period: '/mo',
+    bdtPrice: '৳75,000',
+    usdPrice: '($600 / month)',
+    period: '/ month',
     tag: 'Signature',
     dark: false,
     neuro: false,
@@ -80,8 +83,9 @@ const tiers = [
   {
     label: 'AAYU NEURO',
     name: 'Aayu Neuro',
-    price: 'From $600',
-    period: '/session',
+    bdtPrice: 'From $600',
+    usdPrice: null,
+    period: '/ session',
     tag: 'Add-on · All members',
     dark: false,
     neuro: true,
@@ -258,10 +262,17 @@ export default function Home() {
                 >
                   {tier.tag}
                 </p>
-                <p className="font-display font-light text-4xl text-saffron mb-6">
-                  {tier.price}
-                  <span className="text-lg font-body font-light text-stone">{tier.period}</span>
-                </p>
+                <div className="mb-6">
+                  <p className="font-display font-light text-4xl text-saffron leading-tight">
+                    {tier.bdtPrice}
+                    <span className="text-lg font-body font-light text-stone"> {tier.period}</span>
+                  </p>
+                  {tier.usdPrice && (
+                    <p className="font-body font-light text-[11px] text-stone mt-0.5">
+                      {tier.usdPrice}
+                    </p>
+                  )}
+                </div>
                 <ul className="flex flex-col gap-3 mb-8 flex-1">
                   {tier.features.map((f) => (
                     <li
