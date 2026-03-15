@@ -169,7 +169,6 @@ export default function Home() {
           <div>
             <p
               className="font-display italic font-light text-6xl md:text-7xl lg:text-8xl text-saffron-light leading-none select-none"
-              style={{ opacity: 0.18 }}
             >
               The Why.
             </p>
