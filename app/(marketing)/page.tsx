@@ -19,7 +19,7 @@ const pillars = [
   {
     num: '04',
     name: 'Biomarkers',
-    desc: 'Lab literacy, wearable guidance, and working with your doctor — not around them.',
+    desc: 'Lab literacy, biomarker tracking, and working with your doctor — not around them.',
   },
 ]
 
@@ -72,8 +72,7 @@ const tiers = [
     features: [
       'Dedicated senior coach plus monthly physician home visit',
       'Daily meal delivery 7 days a week, including breakfast',
-      'Oura ring gifted at signup',
-      'Matte black Aayu membership card',
+
       'Quarterly printed health report, delivered to your home',
       'Family health consultation quarterly',
       'Invitation to the annual Aayu Retreat',
@@ -95,8 +94,7 @@ const tiers = [
       'Monthly physician home visit for the entire household',
       'Daily meal delivery for the whole family, 7 days a week',
       'Quarterly individual health screening for each family member',
-      'Separate Oura rings for primary member and spouse',
-      'Two Aayu membership cards',
+
       'Annual family health report — one beautifully bound document',
       'Two invitations to the annual Aayu Retreat',
       'Priority Aayu Neuro access for all adult members',

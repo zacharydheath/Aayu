@@ -74,8 +74,7 @@ const tiers = [
     features: [
       'Dedicated senior coach plus monthly home visit from our Dhaka physician',
       'Daily meal delivery 7 days a week, including breakfast',
-      'Oura ring gifted at signup — your health data, always with you',
-      'Matte black Aayu membership card',
+
       'Quarterly printed health report — bound, beautifully designed, delivered to your home',
       'Family health consultation quarterly — spouse and parents included',
       'Invitation to the annual Aayu Retreat',
@@ -95,7 +94,7 @@ const tiers = [
     isNeuro: false,
     tagline: 'For the family that takes care of each other — the way family should.',
     whoFor: 'For households where health is a shared priority. Covers the primary member, spouse, children, and parents living in the household.',
-    month: 'A typical month includes dedicated coaching for each adult, a physician home visit for the whole household, daily meal delivery, and quarterly health screenings for every family member. Two Oura rings. Two membership cards. One annual family health report.',
+    month: 'A typical month includes dedicated coaching for each adult, a physician home visit for the whole household, daily meal delivery, and quarterly health screenings for every family member. One annual family health report.',
     coverNote: 'Covers: primary member, spouse, children, and parents in the household.',
     ctaNote: 'Our most comprehensive membership. Limited availability — we accept very few Family members at a time.',
     features: [
@@ -104,8 +103,7 @@ const tiers = [
       'Monthly physician home visit for the entire household',
       'Daily meal delivery for the whole family, 7 days a week',
       'Quarterly individual health screening for each family member',
-      'Separate Oura rings for primary member and spouse',
-      'Two Aayu membership cards',
+
       'Annual family health report — one beautifully bound document',
       'Two invitations to the annual Aayu Retreat',
       'Priority Aayu Neuro access for all adult members',
@@ -131,7 +129,7 @@ const tiers = [
       '60-minute remote consultation with our US-based neurologist',
       'Cognitive performance and memory assessment',
       'Sleep architecture review and recommendations',
-      'Stress and cortisol pattern analysis using your wearable data',
+      'Stress and cortisol pattern analysis based on your health history',
       'Early neurological risk screening',
       'Written summary with personalized recommendations within 48 hours',
     ],
