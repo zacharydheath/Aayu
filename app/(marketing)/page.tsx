@@ -76,7 +76,7 @@ const tiers = [
       'Daily meal delivery 5 days a week, including breakfast — calibrated to your quarterly screening results',
       'Quarterly at-home health screening — bloodwork, vitals, full review',
       'Quarterly printed health report — bound, beautifully designed, delivered to your home',
-      'Annual health letter from your physician, on Aayu letterhead',
+
       'Pharmacy coordination handled directly by your Aayu physician',
       'Direct WhatsApp access to your physician between visits',
       'Priority scheduling and guaranteed same-week response on all requests',
