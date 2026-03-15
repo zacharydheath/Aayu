@@ -186,13 +186,8 @@ export default function ServicesPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
                 {/* Left */}
                 <div>
-                  <p
-                    className="font-body text-[9px] font-medium tracking-[0.22em] uppercase mb-2 text-stone"
-                  >
-                    {tier.label}
-                  </p>
                   <h2
-                    className="font-display font-light text-4xl mb-1 text-earth"
+                    className="font-display font-light text-5xl md:text-[48px] mb-1 text-earth leading-tight"
                   >
                     {tier.name}
                   </h2>
