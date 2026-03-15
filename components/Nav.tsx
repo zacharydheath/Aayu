@@ -18,8 +18,16 @@ export default function Nav() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-warm-white border-b border-earth/10">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="font-display font-light text-2xl tracking-widest text-earth">
-          Aa<span className="text-saffron">y</span>u
+        <Link href="/" className="flex items-center" aria-label="Aayu">
+          <svg width="200" height="56" viewBox="0 0 200 56" xmlns="http://www.w3.org/2000/svg" className="h-9 w-auto">
+            <g transform="translate(22, 26)">
+              <path d="M-14,18 L0,-18 L14,18" stroke="#2C2018" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+              <line x1="-8" y1="4" x2="8" y2="4" stroke="#2C2018" strokeWidth="1.6" strokeLinecap="round"/>
+              <path d="M-14,-18 L0,18 L14,-18" stroke="#C8822A" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" opacity="0.65"/>
+              <line x1="-8" y1="-4" x2="8" y2="-4" stroke="#C8822A" strokeWidth="1.1" strokeLinecap="round" opacity="0.65"/>
+            </g>
+            <text x="40" y="44" fontFamily="Georgia, 'Times New Roman', serif" fontSize="20" fill="#2C2018" letterSpacing="3" fontWeight="400">ayu</text>
+          </svg>
         </Link>
 
         {/* Desktop nav */}
