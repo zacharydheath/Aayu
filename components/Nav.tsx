@@ -18,8 +18,8 @@ export default function Nav() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-warm-white border-b border-earth/10">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="font-display font-light text-2xl tracking-widest text-earth">
-          AA<span className="text-saffron">Y</span>U
+        <Link href="/" className="font-display font-light text-2xl tracking-[0.15em] text-earth">
+          Aa<span className="text-saffron">y</span>u
         </Link>
 
         {/* Desktop nav */}
