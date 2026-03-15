@@ -24,7 +24,7 @@ const tiers = [
     coverNote: null,
     ctaNote: null,
     features: [
-      'Dedicated health coach, weekly 30-min video check-in',
+      'Dedicated health coach, monthly 30-min video check-in',
       'Nutrition coaching built around your actual diet and culture',
       'Movement guidance for where you\'re starting, not where you should be',
       'Weekly check-ins to stay honest and on track',
