@@ -129,13 +129,13 @@ export default function PortalHome() {
       {/* Quick links row */}
       <div className="mx-4 mt-3 grid grid-cols-2 gap-3">
         <Link
-          href="/portal/plan"
+          href="/portal/community"
           className="rounded-xl p-4 block"
           style={{ background: '#FDFAF5', border: '0.5px solid rgba(61,43,26,0.1)' }}
         >
-          <p className="font-body font-medium text-[9px] tracking-[0.2em] uppercase text-saffron mb-1">My Plan</p>
-          <p className="font-display font-light text-lg text-earth">3 of 5 actions</p>
-          <p className="font-body font-light text-[11px] text-stone">done this week</p>
+          <p className="font-body font-medium text-[9px] tracking-[0.2em] uppercase text-saffron mb-1">Falgun Cohort</p>
+          <p className="font-display font-light text-lg text-earth">Community</p>
+          <p className="font-body font-light text-[11px] text-stone">3 members checked in today</p>
         </Link>
         <Link
           href="/portal/progress"

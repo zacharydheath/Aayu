@@ -43,14 +43,14 @@ const navItems = [
     ),
   },
   {
-    label: 'My Plan',
-    href: '/portal/plan',
+    label: 'Community',
+    href: '/portal/community',
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="5" y="2" width="14" height="20" rx="2" />
-        <line x1="9" y1="7" x2="15" y2="7" />
-        <line x1="9" y1="11" x2="15" y2="11" />
-        <line x1="9" y1="15" x2="13" y2="15" />
+        <circle cx="9" cy="7" r="3" />
+        <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2" />
+        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+        <path d="M21 21v-2a4 4 0 0 0-3-3.85" />
       </svg>
     ),
   },
