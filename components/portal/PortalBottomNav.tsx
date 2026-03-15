@@ -61,8 +61,19 @@ export default function PortalBottomNav() {
 
   return (
     <nav
-      className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[420px] bg-warm-white z-50 flex"
-      style={{ borderTop: '0.5px solid rgba(61,43,26,0.1)' }}
+      style={{
+        position: 'fixed',
+        bottom: 0,
+        left: '50%',
+        transform: 'translateX(-50%)',
+        width: '100%',
+        maxWidth: 420,
+        minHeight: 64,
+        background: '#FDFAF5',
+        borderTop: '1px solid rgba(61,43,26,0.12)',
+        zIndex: 100,
+        display: 'flex',
+      }}
     >
       {navItems.map((item) => {
         const isActive = item.href === '/portal'
@@ -73,7 +84,7 @@ export default function PortalBottomNav() {
           <Link
             key={item.href}
             href={item.href}
-            className="flex-1 flex flex-col items-center justify-center gap-1 min-h-[44px] py-2"
+            className="flex-1 flex flex-col items-center justify-center gap-1 min-h-[64px] py-3"
             style={{ color: isActive ? '#C8832A' : '#9E9388' }}
           >
             {item.icon}
