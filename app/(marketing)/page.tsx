@@ -49,7 +49,8 @@ const tiers = [
     usdPrice: '($400 / month)',
     period: '/ month',
     tag: 'Most Popular',
-    dark: true,
+    dark: false,
+    featured: true,
     neuro: false,
     features: [
       'Dedicated senior coach, bi-weekly 45-min 1:1 sessions',
@@ -267,26 +268,21 @@ export default function Home() {
             {tiers.map((tier) => (
               <div
                 key={tier.name}
-                className={`p-6 lg:p-8 flex flex-col ${tier.dark ? 'bg-earth' : 'bg-warm-white'} ${tier.neuro ? 'border-t-2 border-saffron' : ''}`}
+                className={`p-6 lg:p-8 flex flex-col bg-warm-white ${tier.neuro ? 'border-t-2 border-saffron' : ''}`}
+                style={'featured' in tier && tier.featured ? { borderLeft: '3px solid #C8832A' } : undefined}
               >
                 <p
-                  className={`font-body text-[9px] font-medium tracking-[0.22em] uppercase mb-2 ${
-                    tier.dark ? 'text-saffron-light/60' : 'text-stone'
-                  }`}
+                  className="font-body text-[9px] font-medium tracking-[0.22em] uppercase mb-2 text-stone"
                 >
                   {tier.label}
                 </p>
                 <h3
-                  className={`font-display font-light text-3xl mb-1 ${
-                    tier.dark ? 'text-saffron-light' : 'text-earth'
-                  }`}
+                  className="font-display font-light text-3xl mb-1 text-earth"
                 >
                   {tier.name}
                 </h3>
                 <p
-                  className={`font-body text-xs font-light mb-5 ${
-                    tier.dark ? 'text-saffron-light/40' : 'text-stone'
-                  }`}
+                  className="font-body text-xs font-light mb-5 text-stone"
                 >
                   {tier.tag}
                 </p>
@@ -305,9 +301,7 @@ export default function Home() {
                   {tier.features.map((f) => (
                     <li
                       key={f}
-                      className={`font-body text-[15px] font-light flex items-start gap-2 ${
-                        tier.dark ? 'text-saffron-light/70' : 'text-earth/65'
-                      }`}
+                      className="font-body text-[15px] font-light flex items-start gap-2 text-earth/65"
                     >
                       <span className="text-saffron mt-0.5 shrink-0">—</span>
                       {f}
@@ -321,11 +315,7 @@ export default function Home() {
                 )}
                 <Link
                   href="/services"
-                  className={`font-body text-sm font-medium text-center min-h-[44px] flex items-center justify-center rounded-[2px] tracking-wide transition-colors ${
-                    tier.dark
-                      ? 'bg-saffron text-white hover:bg-saffron-light hover:text-earth'
-                      : 'bg-earth text-saffron-light hover:bg-earth-mid'
-                  }`}
+                  className="font-body text-sm font-medium text-center min-h-[44px] flex items-center justify-center rounded-[2px] tracking-wide transition-colors bg-earth text-saffron-light hover:bg-earth-mid"
                 >
                   Apply for {tier.name}
                 </Link>

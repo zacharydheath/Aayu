@@ -39,7 +39,8 @@ const tiers = [
     usdPrice: '($400 / month)',
     period: '/ month',
     tag: 'Most Popular',
-    dark: true,
+    dark: false,
+    featured: true,
     isFamily: false,
     isNeuro: false,
     tagline: 'For someone ready to make health a visible, daily part of their life.',
@@ -179,29 +180,24 @@ export default function ServicesPage() {
                 </div>
               )}
             <div
-              className={`p-10 lg:p-14 ${tier.dark ? 'bg-earth' : 'bg-warm-white'}`}
+              className="p-10 lg:p-14 bg-warm-white"
+              style={'featured' in tier && tier.featured ? { borderLeft: '3px solid #C8832A' } : undefined}
             >
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
                 {/* Left */}
                 <div>
                   <p
-                    className={`font-body text-[9px] font-medium tracking-[0.22em] uppercase mb-2 ${
-                      tier.dark ? 'text-saffron-light/60' : 'text-stone'
-                    }`}
+                    className="font-body text-[9px] font-medium tracking-[0.22em] uppercase mb-2 text-stone"
                   >
                     {tier.label}
                   </p>
                   <h2
-                    className={`font-display font-light text-4xl mb-1 ${
-                      tier.dark ? 'text-saffron-light' : 'text-earth'
-                    }`}
+                    className="font-display font-light text-4xl mb-1 text-earth"
                   >
                     {tier.name}
                   </h2>
                   <p
-                    className={`font-body text-xs font-light mb-4 ${
-                      tier.dark ? 'text-saffron-light/40' : 'text-stone'
-                    }`}
+                    className="font-body text-xs font-light mb-4 text-stone"
                   >
                     {tier.tag}
                   </p>
@@ -217,9 +213,7 @@ export default function ServicesPage() {
                     )}
                   </div>
                   <p
-                    className={`font-body font-light italic text-[13px] leading-relaxed ${tier.coverNote ? 'mb-3' : 'mb-6'} ${
-                      tier.dark ? 'text-saffron-light/50' : 'text-earth-mid/70'
-                    }`}
+                    className={`font-body font-light italic text-[13px] leading-relaxed text-earth-mid/70 ${tier.coverNote ? 'mb-3' : 'mb-6'}`}
                   >
                     {tier.tagline}
                   </p>
@@ -230,11 +224,7 @@ export default function ServicesPage() {
                   )}
                   <Link
                     href="#apply"
-                    className={`inline-block font-body text-sm font-medium py-3 px-7 rounded-sm tracking-wide transition-colors ${
-                      tier.dark
-                        ? 'bg-saffron text-white hover:bg-saffron-light hover:text-earth'
-                        : 'bg-earth text-saffron-light hover:bg-earth-mid'
-                    }`}
+                    className="inline-block font-body text-sm font-medium py-3 px-7 rounded-sm tracking-wide transition-colors bg-earth text-saffron-light hover:bg-earth-mid"
                   >
                     Apply for {tier.name}
                   </Link>
@@ -246,9 +236,7 @@ export default function ServicesPage() {
                     {tier.features.map((f) => (
                       <li
                         key={f}
-                        className={`font-body text-sm font-light flex items-start gap-2 ${
-                          tier.dark ? 'text-saffron-light/70' : 'text-earth/65'
-                        }`}
+                        className="font-body text-sm font-light flex items-start gap-2 text-earth/65"
                       >
                         <span className="text-saffron mt-0.5 shrink-0">—</span>
                         {f}
@@ -269,35 +257,25 @@ export default function ServicesPage() {
                   )}
 
                   <div
-                    className={`border-t pt-6 ${
-                      tier.dark ? 'border-saffron/20' : 'border-earth/10'
-                    }`}
+                    className="border-t pt-6 border-earth/10"
                   >
                     <p
-                      className={`font-body text-[10px] font-medium tracking-[0.2em] uppercase mb-2 ${
-                        tier.dark ? 'text-saffron-light/40' : 'text-stone'
-                      }`}
+                      className="font-body text-[10px] font-medium tracking-[0.2em] uppercase mb-2 text-stone"
                     >
                       Who it&apos;s for
                     </p>
                     <p
-                      className={`font-body font-light text-sm leading-relaxed mb-5 ${
-                        tier.dark ? 'text-saffron-light/55' : 'text-earth/55'
-                      }`}
+                      className="font-body font-light text-sm leading-relaxed mb-5 text-earth/55"
                     >
                       {tier.whoFor}
                     </p>
                     <p
-                      className={`font-body text-[10px] font-medium tracking-[0.2em] uppercase mb-2 ${
-                        tier.dark ? 'text-saffron-light/40' : 'text-stone'
-                      }`}
+                      className="font-body text-[10px] font-medium tracking-[0.2em] uppercase mb-2 text-stone"
                     >
                       A typical month
                     </p>
                     <p
-                      className={`font-body font-light text-sm leading-relaxed ${
-                        tier.dark ? 'text-saffron-light/55' : 'text-earth/55'
-                      }`}
+                      className="font-body font-light text-sm leading-relaxed text-earth/55"
                     >
                       {tier.month}
                     </p>
