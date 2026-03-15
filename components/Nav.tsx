@@ -19,7 +19,7 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="font-display font-light text-2xl tracking-widest text-earth">
-          Aa<span className="text-saffron">y</span>u
+          AA<span className="text-saffron">Y</span>U
         </Link>
 
         {/* Desktop nav */}

@@ -135,7 +135,7 @@ export default function Home() {
       <section className="pt-16 bg-linen">
         <div className="px-8 md:px-14 lg:px-20 pt-10 pb-12 md:pt-16 md:pb-20 w-full">
           <p className="font-body text-[10px] font-medium tracking-[0.3em] text-saffron uppercase mb-5">
-            Premium Lifestyle Coaching
+            Longevity, by design.
           </p>
           <h1 className="font-display font-light text-6xl md:text-7xl lg:text-8xl text-earth leading-[1.05] mb-5 max-w-4xl">
             Your life,{' '}
