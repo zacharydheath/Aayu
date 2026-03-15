@@ -54,7 +54,7 @@ const tiers = [
     features: [
       'Dedicated senior coach, bi-weekly 45-min 1:1 sessions',
       'Nutrition and movement coaching that evolves with you',
-      'Daily Aayu meal delivery, 5 days a week',
+      'Daily Aayu meal delivery, 3 days a week',
       'Quarterly at-home health screening by our medical team',
       'Aayu welcome kit — supplement starter pack, branded essentials',
       'Monthly progress report, beautifully designed',
@@ -72,7 +72,7 @@ const tiers = [
     note: 'Aayu accepts a maximum of 50 Concierge members at any time.',
     features: [
       'Dedicated senior coach plus monthly home visit from your named Aayu physician',
-      'Daily meal delivery 7 days a week, including breakfast — calibrated to your quarterly screening results',
+      'Daily meal delivery 5 days a week, including breakfast — calibrated to your quarterly screening results',
       'Quarterly at-home health screening — bloodwork, vitals, full review',
       'Quarterly printed health report — bound, beautifully designed, delivered to your home',
       'Annual health letter from your physician, on Aayu letterhead',
