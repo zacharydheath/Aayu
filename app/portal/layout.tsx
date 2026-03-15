@@ -5,10 +5,10 @@ import { CheckinProvider } from '@/lib/checkin-context'
 export default function PortalLayout({ children }: { children: React.ReactNode }) {
   return (
     <CheckinProvider>
-      <div style={{ display: 'flex', justifyContent: 'center', height: '100dvh', background: '#EDE8DF' }}>
-        <div style={{ width: '100%', maxWidth: 420, display: 'flex', flexDirection: 'column', height: '100dvh', background: '#FDFAF5' }}>
+      <div className="min-h-screen bg-linen flex justify-center">
+        <div className="w-full max-w-[420px] bg-warm-white min-h-screen">
           <PortalTopBar />
-          <main style={{ flex: 1, overflowY: 'auto', paddingBottom: 24 }}>
+          <main className="pt-14 pb-32">
             {children}
           </main>
           <PortalBottomNav />
