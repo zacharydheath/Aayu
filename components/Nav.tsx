@@ -47,7 +47,7 @@ export default function Nav() {
             href="/services"
             className="font-body text-sm font-medium bg-earth text-saffron-light px-5 min-h-[44px] flex items-center rounded-[2px] hover:bg-earth-mid transition-colors tracking-wide"
           >
-            Apply Now
+            Reserve Your April Spot
           </Link>
         </div>
 
@@ -92,7 +92,7 @@ export default function Nav() {
             onClick={() => setOpen(false)}
             className="font-body text-sm font-medium bg-earth text-saffron-light px-5 min-h-[44px] flex items-center justify-center rounded-[2px] text-center tracking-wide hover:bg-earth-mid transition-colors"
           >
-            Apply Now
+            Reserve Your April Spot
           </Link>
         </div>
       )}
