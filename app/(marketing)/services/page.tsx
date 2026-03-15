@@ -16,9 +16,13 @@ const tiers = [
     period: '/ month',
     tag: 'Foundation',
     dark: false,
+    isFamily: false,
+    isNeuro: false,
     tagline: 'For someone who\'s ready to start — and wants the right guidance from day one.',
     whoFor: 'Available to new members with no minimum commitment. Your coach will build your first framework within 48 hours of your intake call.',
     month: 'A typical month includes a weekly 30-minute video check-in, an updated nutrition and movement plan, and a written summary after each session. You also have access to the Aayu app for daily habit tracking.',
+    coverNote: null,
+    ctaNote: null,
     features: [
       'Dedicated health coach, weekly 30-min video check-in',
       'Nutrition coaching built around your actual diet and culture',
@@ -36,9 +40,13 @@ const tiers = [
     period: '/ month',
     tag: 'Most Popular',
     dark: true,
+    isFamily: false,
+    isNeuro: false,
     tagline: 'For someone ready to make health a visible, daily part of their life.',
     whoFor: 'Best for members who want coaching that goes beyond the session — daily meals handled, quarterly screenings done, and a progress report you\'d actually want to keep.',
     month: 'A typical month includes bi-weekly 45-minute coaching sessions, daily meal delivery 5 days a week, and a quarterly at-home screening coordinated by our medical team. Your monthly report arrives beautifully designed.',
+    coverNote: null,
+    ctaNote: null,
     features: [
       'Dedicated senior coach, bi-weekly 45-min 1:1 sessions',
       'Nutrition and movement coaching that evolves with you',
@@ -56,9 +64,13 @@ const tiers = [
     period: '/ month',
     tag: 'Signature',
     dark: false,
+    isFamily: false,
+    isNeuro: false,
     tagline: 'For someone who wants the full picture — and the full experience.',
     whoFor: 'For members who want physician-level oversight, daily meals, and the kind of membership that makes health feel effortless. Family included.',
     month: 'A typical month includes weekly coaching, a physician home visit, daily meal delivery, and a quarterly printed health report delivered to your home. Your family members join the quarterly health consultation.',
+    coverNote: null,
+    ctaNote: null,
     features: [
       'Dedicated senior coach plus monthly home visit from our Dhaka physician',
       'Daily meal delivery 7 days a week, including breakfast',
@@ -72,6 +84,35 @@ const tiers = [
     ],
   },
   {
+    label: 'AAYU FAMILY',
+    name: 'Aayu Family',
+    bdtPrice: '৳1,50,000',
+    usdPrice: '($1,200 / month)',
+    period: '/ month',
+    tag: 'Legacy',
+    dark: false,
+    isFamily: true,
+    isNeuro: false,
+    tagline: 'For the family that takes care of each other — the way family should.',
+    whoFor: 'For households where health is a shared priority. Covers the primary member, spouse, children, and parents living in the household.',
+    month: 'A typical month includes dedicated coaching for each adult, a physician home visit for the whole household, daily meal delivery, and quarterly health screenings for every family member. Two Oura rings. Two membership cards. One annual family health report.',
+    coverNote: 'Covers: primary member, spouse, children, and parents in the household.',
+    ctaNote: 'Our most comprehensive membership. Limited availability — we accept very few Family members at a time.',
+    features: [
+      'Everything in Aayu Concierge for the primary member',
+      'Dedicated coach for each adult family member',
+      'Monthly physician home visit for the entire household',
+      'Daily meal delivery for the whole family, 7 days a week',
+      'Quarterly individual health screening for each family member',
+      'Separate Oura rings for primary member and spouse',
+      'Two Aayu membership cards',
+      'Annual family health report — one beautifully bound document',
+      'Two invitations to the annual Aayu Retreat',
+      'Priority Aayu Neuro access for all adult members',
+      'Direct physician WhatsApp line for anyone in the household',
+    ],
+  },
+  {
     label: 'AAYU NEURO',
     name: 'Aayu Neuro',
     bdtPrice: '৳75,000',
@@ -79,9 +120,13 @@ const tiers = [
     period: '/ session',
     tag: 'Add-on · All members',
     dark: false,
+    isFamily: false,
+    isNeuro: true,
     tagline: 'Your brain is the most important organ you\'re probably not tracking.',
     whoFor: 'Available to all Aayu members as a standalone add-on. Aayu Concierge members receive priority scheduling and a discounted rate.',
     month: 'Each session is self-contained: a 60-minute remote consultation, followed by a written summary with personalized recommendations within 48 hours. Findings are shared with your coach and integrated into your overall plan.',
+    coverNote: null,
+    ctaNote: null,
     features: [
       '60-minute remote consultation with our US-based neurologist',
       'Cognitive performance and memory assessment',
@@ -108,8 +153,9 @@ export default function ServicesPage() {
           </h1>
           <p className="font-body font-light text-lg text-earth/60 leading-relaxed max-w-2xl">
             Aayu operates in Dhaka with a small, carefully selected membership.
-            Every tier includes dedicated coaching, physician oversight, and the
-            kind of attention that produces real, lasting change.
+            Choose the tier that fits your family&apos;s needs — every level
+            includes dedicated coaching, physician oversight, and the kind of
+            attention that produces real, lasting change.
           </p>
         </div>
       </section>
@@ -118,8 +164,17 @@ export default function ServicesPage() {
       <section className="bg-warm-white">
         <div className="max-w-5xl mx-auto px-6 py-20 md:py-28 flex flex-col gap-px bg-earth/10">
           {tiers.map((tier) => (
+            <div key={tier.name}>
+              {tier.isNeuro && (
+                <div className="flex items-center gap-4 py-10">
+                  <div className="flex-1 h-px bg-saffron/20" />
+                  <p className="font-body text-[10px] font-medium tracking-[0.25em] text-stone uppercase">
+                    Add-on · Available to all members
+                  </p>
+                  <div className="flex-1 h-px bg-saffron/20" />
+                </div>
+              )}
             <div
-              key={tier.name}
               className={`p-10 lg:p-14 ${tier.dark ? 'bg-earth' : 'bg-warm-white'}`}
             >
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
@@ -158,12 +213,17 @@ export default function ServicesPage() {
                     )}
                   </div>
                   <p
-                    className={`font-body font-light italic text-[13px] leading-relaxed mb-6 ${
+                    className={`font-body font-light italic text-[13px] leading-relaxed ${tier.coverNote ? 'mb-3' : 'mb-6'} ${
                       tier.dark ? 'text-saffron-light/50' : 'text-earth-mid/70'
                     }`}
                   >
                     {tier.tagline}
                   </p>
+                  {tier.coverNote && (
+                    <p className="font-body font-light text-[12px] text-stone leading-relaxed mb-6">
+                      {tier.coverNote}
+                    </p>
+                  )}
                   <Link
                     href="#apply"
                     className={`inline-block font-body text-sm font-medium py-3 px-7 rounded-sm tracking-wide transition-colors ${
@@ -191,6 +251,12 @@ export default function ServicesPage() {
                       </li>
                     ))}
                   </ul>
+
+                  {tier.ctaNote && (
+                    <p className="font-body font-light text-[12px] text-stone leading-relaxed mb-8 italic">
+                      {tier.ctaNote}
+                    </p>
+                  )}
 
                   <div
                     className={`border-t pt-6 ${
@@ -228,6 +294,7 @@ export default function ServicesPage() {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           ))}
           <p className="font-body font-light italic text-sm text-earth-mid/60 text-center mt-6">

@@ -81,6 +81,29 @@ const tiers = [
     ],
   },
   {
+    label: 'AAYU FAMILY',
+    name: 'Aayu Family',
+    bdtPrice: '৳1,50,000',
+    usdPrice: '($1,200 / month)',
+    period: '/ month',
+    tag: 'Legacy',
+    dark: false,
+    neuro: false,
+    features: [
+      'Everything in Aayu Concierge for the primary member',
+      'Dedicated coach for each adult family member',
+      'Monthly physician home visit for the entire household',
+      'Daily meal delivery for the whole family, 7 days a week',
+      'Quarterly individual health screening for each family member',
+      'Separate Oura rings for primary member and spouse',
+      'Two Aayu membership cards',
+      'Annual family health report — one beautifully bound document',
+      'Two invitations to the annual Aayu Retreat',
+      'Priority Aayu Neuro access for all adult members',
+      'Direct physician WhatsApp line for anyone in the household',
+    ],
+  },
+  {
     label: 'AAYU NEURO',
     name: 'Aayu Neuro',
     bdtPrice: '৳75,000',
@@ -235,7 +258,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-px bg-earth/10">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-px bg-earth/10">
             {tiers.map((tier) => (
               <div
                 key={tier.name}
