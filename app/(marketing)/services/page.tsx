@@ -18,17 +18,18 @@ const tiers = [
     dark: false,
     isFamily: false,
     isNeuro: false,
-    tagline: 'For someone who\'s ready to start — and wants the right guidance from day one.',
-    whoFor: 'Available to new members with no minimum commitment. Your coach will build your first framework within 48 hours of your intake call.',
-    month: 'A typical month includes a weekly 30-minute video check-in, an updated nutrition and movement plan, and a written summary after each session. You also have access to the Aayu app for daily habit tracking.',
+    tagline: "For someone who knows something needs to change — and wants a knowledgeable guide in their corner from day one.",
+    outcome: "You stop guessing. You have a real coach who knows your name, your diet, your life — and checks in regularly to make sure you're moving in the right direction. Most people never get this. You will.",
+    whoFor: "For someone who knows something needs to change — and wants a knowledgeable guide in their corner from day one.",
     coverNote: null,
-    ctaNote: null,
     features: [
-      'Dedicated health coach, monthly 30-min video check-in',
+      'Dedicated health coach — yours for as long as you\'re a member',
+      'Monthly 1:1 coaching call, 30 minutes',
+      'Async coach check-ins twice a week — questions answered, habits reinforced, between sessions',
       'Nutrition coaching built around the way you actually eat',
       'Movement guidance for where you\'re starting, not where you should be',
-      'Weekly check-ins to stay honest and on track',
-      'Access to the Aayu member community',
+      'Structured 12-week onboarding — your first three months have a clear arc, not a blank page',
+      'Access to your monthly cohort — members who started the same month, on the same journey',
       'Habit tracking via the Aayu app',
     ],
   },
@@ -43,47 +44,47 @@ const tiers = [
     featured: true,
     isFamily: false,
     isNeuro: false,
-    tagline: 'For someone ready to make health a visible, daily part of their life.',
-    whoFor: 'Best for members who want coaching that goes beyond the session — daily meals handled, quarterly screenings done, and a progress report you\'d actually want to keep.',
-    month: 'A typical month includes bi-weekly 45-minute coaching sessions, daily meal delivery 3 days a week, and a quarterly at-home screening coordinated by our medical team. Your monthly report arrives beautifully designed.',
+    tagline: "For someone ready to make health a real, daily part of their life — not just something they think about.",
+    outcome: "Health stops being abstract. Every day, food arrives that was built for your body. Every quarter, a physician reviews your numbers. Every two weeks, your coach adjusts the plan based on what's actually happening. You stop wondering if you're doing the right things — you know.",
+    whoFor: "For someone ready to make health a real, daily part of their life — not just something they think about.",
     coverNote: null,
-    ctaNote: null,
     features: [
       'Dedicated senior coach, bi-weekly 45-min 1:1 sessions',
-      'Nutrition and movement coaching that evolves with you',
-      'Daily Aayu meal delivery, 3 days a week — chef-prepared, nutritionally calibrated, delivered to your door',
+      'Async coach support between sessions — WhatsApp access for questions, wins, and hard days',
+      'Nutrition and movement coaching that evolves with you month to month',
+      'Daily Aayu meal delivery, 5 days a week — chef-prepared, nutritionally calibrated for your health profile, delivered to your door',
       'Quarterly at-home health screening — bloodwork, vitals, and a full review coordinated by our medical team',
-      'Aayu welcome kit — supplement starter pack, branded essentials',
-      'Monthly progress report, beautifully designed',
+      'Monthly progress report — beautifully designed, every number that matters',
+      'Aayu welcome kit — supplement starter pack and branded essentials',
+      'Full cohort access — feed, leaderboard, group chat',
     ],
   },
   {
     label: 'AAYU CONCIERGE',
     name: 'Aayu Concierge',
-    bdtPrice: '৳75,000',
-    usdPrice: '($600 / month)',
+    bdtPrice: '৳1,00,000',
+    usdPrice: '($800 / month)',
     period: '/ month',
     tag: 'Signature',
     dark: false,
     isFamily: false,
     isNeuro: false,
-    tagline: 'For someone who wants the full picture — and the full experience.',
-    whoFor: 'For members who want physician-level oversight, daily meals, and the kind of membership that makes health feel effortless. Family included.',
-    month: 'A typical month includes weekly coaching, a physician home visit, daily meal delivery, and a quarterly printed health report delivered to your home. Your family members join the quarterly health consultation.',
+    tagline: "For someone who wants the full picture — and a team that treats their health like the long-term investment it is.",
+    outcome: "You have a physician who knows you by name, visits your home every month, and is reachable between visits. Your meals are calibrated to your latest screening results. Your pharmacy is handled. Nothing falls through the cracks. This is what serious, sustained health transformation looks like when you remove every obstacle.",
+    whoFor: "For someone who wants the full picture — and a team that treats their health like the long-term investment it is.",
     coverNote: null,
-    ctaNote: null,
     note: 'Aayu accepts a maximum of 50 Concierge members at any time.',
     features: [
       'Dedicated senior coach plus monthly home visit from your named Aayu physician',
-      'Daily meal delivery 5 days a week, including breakfast — calibrated to your quarterly screening results',
-      'Quarterly at-home health screening — bloodwork, vitals, full review',
-      'Quarterly printed health report — bound, beautifully designed, delivered to your home',
-
-      'Pharmacy coordination handled directly by your Aayu physician',
       'Direct WhatsApp access to your physician between visits',
+      'Daily meal delivery 7 days a week including breakfast — calibrated to your quarterly screening results',
+      'Quarterly at-home health screening — bloodwork, vitals, full review',
+      'Pharmacy coordination handled directly by your Aayu physician',
+      'Quarterly printed health report — bound, beautifully designed, delivered to your home',
       'Priority scheduling and guaranteed same-week response on all requests',
       'First access to new Aayu services and programs',
       'Priority access to Aayu Neuro sessions',
+      'Full cohort access',
     ],
   },
   {
@@ -96,17 +97,16 @@ const tiers = [
     dark: false,
     isFamily: true,
     isNeuro: false,
-    tagline: 'For the family that takes care of each other — the way family should.',
-    whoFor: 'For households where health is a shared priority. Covers the primary member, spouse, children, and parents living in the household.',
-    month: 'A typical month includes dedicated coaching for each adult, a physician home visit for the whole household, daily meal delivery, and quarterly health screenings for every family member. One annual family health report.',
+    tagline: "For the family that understands that health is not an individual achievement — it's a collective one.",
+    outcome: "Everyone in your household gets the same level of care you do. Your spouse has a coach. Your parents have a physician who visits the home. Your children have health documentation handled. One membership covers the people who matter most — because your health and theirs are not separate things.",
+    whoFor: "For the family that understands that health is not an individual achievement — it's a collective one.",
     coverNote: 'Covers: primary member, spouse, children, and parents in the household.',
-    ctaNote: 'Our most comprehensive membership. Not publicly listed — if you\'re being referred by an existing member, we\'d love to hear from you.',
     note: 'Aayu Family is not publicly listed. Access is by referral from an existing Concierge member only.',
     features: [
       'Everything in Aayu Concierge for the primary member',
       'Dedicated coach for each adult family member',
       'Monthly physician home visit covers every member of the household',
-      'Daily meal delivery for the whole family, 7 days a week — meals calibrated to each member\'s health profile',
+      'Daily meal delivery for the whole family, 7 days a week — each member\'s meals calibrated to their health profile',
       'One special occasion meal per quarter — Eid, anniversaries, family gatherings, handled by Aayu Kitchen',
       'Annual in-home family health day — full screenings for every member, back to back, in your home',
       'Individual quarterly health screening for each family member',
@@ -120,18 +120,18 @@ const tiers = [
   {
     label: 'AAYU NEURO',
     name: 'Aayu Neuro',
-    bdtPrice: '৳75,000',
-    usdPrice: '($600 / session)',
+    bdtPrice: '৳50,000',
+    usdPrice: '($400 / session)',
     period: '/ session',
     tag: 'Add-on · All members',
     dark: false,
     isFamily: false,
     isNeuro: true,
-    tagline: 'Your brain is the most important organ you\'re probably not tracking.',
-    whoFor: 'Available to all Aayu members as a standalone add-on. Aayu Concierge members receive priority scheduling and a discounted rate.',
-    month: 'Each session is self-contained: a 60-minute remote consultation, followed by a written summary with personalized recommendations within 48 hours. Findings are shared with your coach and integrated into your overall plan.',
+    tagline: "Your brain is the organ that runs everything else. Most people never check on it until something goes wrong.",
+    outcome: "You get a clear picture of your cognitive health from a US-based neurologist — not a general wellness check, a real clinical conversation about memory, sleep, stress, and long-term neurological risk. Most people in Dhaka have never had access to this. Aayu members do.",
+    whoFor: "Your brain is the organ that runs everything else. Most people never check on it until something goes wrong.",
     coverNote: null,
-    ctaNote: null,
+    note: 'Available quarterly or biannually. Aayu Concierge members receive priority scheduling.',
     features: [
       '60-minute remote consultation with our US-based neurologist',
       'Cognitive performance and memory assessment',
@@ -208,15 +208,18 @@ export default function ServicesPage() {
                     )}
                   </div>
                   <p
-                    className={`font-body font-light italic text-[13px] leading-relaxed text-earth-mid/70 ${tier.coverNote ? 'mb-3' : 'mb-6'}`}
+                    className={`font-body font-light italic text-[13px] leading-relaxed text-earth-mid/70 ${tier.coverNote ? 'mb-3' : 'mb-4'}`}
                   >
                     {tier.tagline}
                   </p>
                   {tier.coverNote && (
-                    <p className="font-body font-light text-[12px] text-stone leading-relaxed mb-6">
+                    <p className="font-body font-light text-[12px] text-stone leading-relaxed mb-4">
                       {tier.coverNote}
                     </p>
                   )}
+                  <p className="font-body font-normal text-[14px] text-earth leading-[1.7] mb-6">
+                    {tier.outcome}
+                  </p>
                   <Link
                     href="#apply"
                     className="inline-block font-body text-sm font-medium py-3 px-7 rounded-sm tracking-wide"
@@ -246,12 +249,6 @@ export default function ServicesPage() {
                     </p>
                   )}
 
-                  {tier.ctaNote && (
-                    <p className="font-body font-light text-[12px] text-stone leading-relaxed mb-8 italic">
-                      {tier.ctaNote}
-                    </p>
-                  )}
-
                   <div
                     className="border-t pt-6 border-earth/10"
                   >
@@ -261,19 +258,9 @@ export default function ServicesPage() {
                       Who it&apos;s for
                     </p>
                     <p
-                      className="font-body font-light text-sm leading-relaxed mb-5 text-earth/55"
-                    >
-                      {tier.whoFor}
-                    </p>
-                    <p
-                      className="font-body text-[10px] font-medium tracking-[0.2em] uppercase mb-2 text-stone"
-                    >
-                      A typical month
-                    </p>
-                    <p
                       className="font-body font-light text-sm leading-relaxed text-earth/55"
                     >
-                      {tier.month}
+                      {tier.whoFor}
                     </p>
                   </div>
                 </div>
@@ -281,9 +268,6 @@ export default function ServicesPage() {
             </div>
             </div>
           ))}
-          <p className="font-body font-light italic text-sm text-earth-mid/60 text-center mt-6">
-            Available quarterly or biannually. Aayu Concierge members receive priority scheduling.
-          </p>
         </div>
       </section>
 
