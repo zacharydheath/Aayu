@@ -40,7 +40,7 @@ const tiers = [
       'Nutrition coaching built around the way you actually eat',
       'Movement guidance for where you\'re starting, not where you should be',
       'Structured 12-week onboarding — your first three months have a clear arc, not a blank page',
-      'Access to your monthly cohort — members who started the same month, on the same journey',
+      'Access to your personal cohort — a small group of members who join the same month as you and go through the journey together',
       'Habit tracking via the Aayu app',
     ],
   },
@@ -62,7 +62,7 @@ const tiers = [
       'Quarterly at-home health screening — bloodwork, vitals, and a full review coordinated by our medical team',
       'Monthly progress report — beautifully designed, every number that matters',
       'Aayu welcome kit — supplement starter pack and branded essentials',
-      'Full cohort access — feed, leaderboard, group chat',
+      'Your own cohort — a private group of members who started the same month, with a shared feed, leaderboard, and group chat',
     ],
   },
   {
@@ -85,7 +85,7 @@ const tiers = [
       'Priority scheduling and guaranteed same-week response on all requests',
       'First access to new Aayu services and programs',
       'Priority access to Aayu Neuro sessions',
-      'Full cohort access',
+      'Your own cohort — a private group of members who started the same month, with a shared feed, leaderboard, and group chat',
     ],
   },
   {
